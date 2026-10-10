@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Lovelt";
+  src: url("/font/Lovelt.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-custom: "Lovelt", Georgia, serif;
+  --color-bg: #1b1714;
+}
