@@ -14,6 +14,17 @@ btn.addEventListener('click', () => {
   }
 })
 
+const counter = new window.Counter({ workspace: 'amino-portfolio' })
+
+counter.up('amino-counter')
+  .then(result => {
+    document.getElementById('counter').textContent = result.data.up_count
+  })
+  .catch(err => {
+    console.error(err)
+    document.getElementById('counter').textContent = 'idk'
+  })
+
 //discord status via lanyard it really cool tool
 // why i am talking to my self idk ?
 const colors = {
