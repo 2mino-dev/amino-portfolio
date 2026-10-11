@@ -41,11 +41,16 @@ const user2 = {
 
 banner.style.backgroundImage = `url(https://cdn.discordapp.com/banners/${user.id}/${user2.banner}.webp?size=1024)`;
 
-if (data.active_on_discord_desktop) {
+if (data.active_on_discord_desktop && data.active_on_discord_mobile) {
+  status.textContent = `hmm right now i am on both laptop and phone`
+} else if (data.active_on_discord_mobile) {
+  status.textContent = `on phone i think`
+} else if (data.active_on_discord_desktop) {
   status.textContent = `Right Now I am on laptop`
 } else {
-  status.textContent = `maybe i am on phone or idk`
+  status.textContent = `idk not online right now`
 }
+
 
 if (user.avatar) {
   const format = user.avatar.startsWith("a_") ? "gif" : "webp";
