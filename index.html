@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="og:description" content="Huh So You Find My Portfolio" />
     <meta name="og:title" content="// Home | Welcome To My Home" />
-    <meta name="og:url" content="https://about.aminolab.space" />
+    <meta name="og:url" content="https://me.aminolab.space" />
     <meta property="og:image" content="/image/lainwalk4.gif" />
     <meta name="theme-color" content="#8dd689" />
     <link rel="icon" type="image/jpeg" href="/image/avater.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>//home</title>
   </head>
-  <body class="bg-bg text-amber-50 font-custom overflow-auto">
+  <body id="body" class="bg-bg text-amber-50 font-custom overflow-hidden">
+      <div id="enter"
+       class="fixed inset-0 z-100 flex items-center justify-center  bg-black/30 duration-500 transition">
+    <span class="animate-pulse text-2xl text-white">[ click to enter ]</span>
+  </div>
+    <div id="blur" class="blur-md transition"> <!-- blur thing -->
     <nav
       class="sticky top-0 z-50 w-full bg-[#111214]/80 backdrop-blur mask-b-from-50% mask-b-to-100%"
     >
@@ -34,7 +39,7 @@
       >
         music
       </button>
-      <audio id="bgm" autoplay loop src="/songs/32. Menu.ogg"></audio>
+      <audio id="bgm" loop src="/songs/32. Menu.ogg"></audio>
     </div>
 
     <main class="mx-auto max-w-6xl px-4 pb-12">
