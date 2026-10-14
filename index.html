@@ -11,227 +11,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>//home</title>
   </head>
-  <body id="body" class="bg-bg text-amber-50 font-custom overflow-hidden">
-      <div id="enter"
-       class="fixed inset-0 z-100 flex items-center justify-center  bg-black/30 duration-500 transition">
-    <span class="animate-pulse text-2xl text-white">[ click to enter ]</span>
-  </div>
-  <div id="blur" class="blur-md transition"> <!-- blur thing -->
-    <nav
-      class="sticky top-0 z-50 w-full bg-[#111214]/80 backdrop-blur mask-b-from-50% mask-b-to-100%"
+  <body id="body" class="bg-bg text-amber-50 font-custom overflow-hidden crt">
+    <div
+      id="enter"
+      class="fixed inset-0 z-100 flex items-center justify-center bg-black/30 duration-500 transition"
     >
-      <div
-        class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-3"
-      >
-        <span class="">Welcome to my portfolio</span>
-        <span>Visitors: <span id="counter">...</span></span>
-      </div>
-    </nav>
-    <header
-      class="h-[45vh] w-full bg-cover bg-center mask-b-from-50% mask-b-to-100%"
-      style="background-image: url(/image/banner.jpg)"
-    ></header>
-    <!--music thing-->
-    <div class="p-4">
-      <button
-        id="play"
-        class="fixed bottom-4 left-4 rounded-full bg-white/10 px-4 py-2 text-sm"
-      >
-        music
-      </button>
-      <audio id="bgm" loop src="/songs/32. Menu.ogg"></audio>
+      <span class="animate-pulse text-2xl text-white">[ click to enter ]</span>
     </div>
-
-    <main class="mx-auto max-w-6xl px-4 pb-12">
-      <section
-        class="grid items-start gap-8 lg:-mt-24 lg:grid-cols-[20rem_1fr_20rem]"
+    <div id="blur" class="blur-md transition">
+      <!-- blur thing -->
+      <nav
+        class="sticky top-0 z-50 w-full bg-[#111214]/80 backdrop-blur mask-b-from-50% mask-b-to-100%"
       >
-        <aside
-          class="mx-auto w-80 max-w-full overflow-hidden rounded-xl bg-[#111214] shadow-xl/30 mask-b-from-50% mask-b-to-100%"
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-3"
         >
-          <div
-            id="banner"
-            class="h-24 bg-cover bg-center"
-            style="background-image: url(/image/banner.jpg)"
-          ></div>
+          <span class="">Welcome to my portfolio</span>
+          <span>Visitors: <span id="counter">...</span></span>
+        </div>
+      </nav>
+      <header
+        class="h-[45vh] w-full bg-cover bg-center mask-b-from-50% mask-b-to-100%"
+        style="background-image: url(/image/banner.jpg)"
+      ></header>
+      <!--music thing-->
+      <div class="p-4">
+        <button
+          id="play"
+          class="fixed bottom-4 left-4 rounded-full bg-white/10 px-4 py-2 text-sm"
+        >
+          music
+        </button>
+        <audio id="bgm" loop src="/songs/32. Menu.ogg"></audio>
+      </div>
 
-          <div class="px-4 pb-4">
-            <div class="relative -mt-10 size-20">
-              <img
-                id="card-avatar"
-                src="/image/avater.jpg"
-                alt="avatar"
-                class="size-20 rounded-full border-[6px] border-[#111214] bg-gray-700 object-cover"
-              />
-              <span
-                id="carddot2"
-                class="absolute right-1 bottom-1 size-5 rounded-full border-4 border-[#111214] bg-gray-500"
-              ></span>
-            </div>
+      <main class="mx-auto max-w-6xl px-4 pb-12">
+        <section
+          class="grid items-start gap-8 lg:-mt-24 lg:grid-cols-[20rem_1fr_20rem]"
+        >
+          <div class="space-y-5">
+            <aside
+              class="mx-auto w-80 max-w-full overflow-hidden rounded-xl bg-[#111214] shadow-xl/30 mask-b-from-50% mask-b-to-100%"
+            >
+              <div
+                id="banner"
+                class="h-24 bg-cover bg-center"
+                style="background-image: url(/image/banner.jpg)"
+              ></div>
 
-            <h2 id="card-name" class="mt-2 text-xl font-bold text-white">
-              amino
-            </h2>
+              <div class="px-4 pb-4">
+                <div class="relative -mt-10 size-20">
+                  <img
+                    id="card-avatar"
+                    src="/image/avater.jpg"
+                    alt="avatar"
+                    class="size-20 rounded-full border-[6px] border-[#111214] bg-gray-700 object-cover"
+                  />
+                  <span
+                    id="carddot2"
+                    class="absolute right-1 bottom-1 size-5 rounded-full border-4 border-[#111214] bg-gray-500"
+                  ></span>
+                </div>
 
-            <div class="mt-3 rounded-lg bg-white/5 p-3">
-              <p class="text-xs font-bold text-gray-400 uppercase">Status</p>
-              <p id="card-status" class="mt-1 text-sm text-gray-200">
-                loading...
-              </p>
+                <h2 id="card-name" class="mt-2 text-xl font-bold text-white">
+                  amino
+                </h2>
+
+                <div class="mt-3 rounded-lg bg-white/5 p-3">
+                  <p class="text-xs font-bold text-gray-400 uppercase">
+                    Status
+                  </p>
+                  <p id="card-status" class="mt-1 text-sm text-gray-200">
+                    loading...
+                  </p>
+                </div>
+              </div>
+            </aside>
+
+            <aside
+              class="mx-auto w-80 max-w-full overflow-hidden rounded-2xl bg-[#111214] shadow-xl/30 mask-b-from-50% mask-b-to-100%"
+            >
+              <div
+                class="h-24 bg-cover bg-center"
+                style="background-image: url(/image/ira2.jpg)"
+              ></div>
+
+              <div class="px-4 pb-4">
+                <h2 class="mt-2 text-xl font-bold text-white">Notes</h2>
+
+                <div class="mt-3 rounded-lg bg-white/5 p-3">
+                  <p class="text-xs font-bold text-gray-400 uppercase">
+                    Latest
+                  </p>
+                  <p class="mt-1 text-sm text-gray-200" id="status">loading...</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="space-y-5 pt-6 text-center lg:pt-28">
+            <h1 class="text-5xl font-bold text-white">Hello I'm amino</h1>
+            <p>
+              Hey, I'm amino just a guy with no life who tries everything new...
+              What am I into? Networking, homelabs, and hardware, and maybe some
+              visual novel games too, and right now I'm
+              <span id="status-text" class="inline-block">loading...</span>
+            </p>
+          </div>
+
+          <div class="mx-auto w-80 max-w-full">
+            <img
+              src="/image/ira.jpg"
+              alt="Ira"
+              class="w-full rounded-xl shadow-xl/30 mask-b-from-50% mask-b-to-100%"
+            />
+          </div>
+        </section>
+        <div class="relative flex overflow-x-hidden animate-pulse">
+          <div class="animate-marquee py-12 whitespace-nowrap">
+            <span class="mx-4 text-4xl"
+              >Did you know that our Sun is a very unusual star</span
+            >
+            <span class="mx-4 text-4xl">Woah</span>
+            <span class="mx-4 text-4xl">Fuck Vadim</span>
+            <span class="mx-4 text-4xl">Nothing...</span>
+          </div>
+        </div>
+        <section id="skills" class="mt-10 space-y-1">
+          <h2 class="text-3xl">Skills</h2>
+          <p>
+            well about that i am not that good tbh with you i am just some
+            random dude learning everything new and give it try if i like i
+            learn it if not drop it but about skill i just know little thing
+            like python and javascript and C++ basics (i learn C++ for
+            challenges soo yep) and a lot of thing Sorry my English is Bad
+          </p>
+        </section>
+        <aside
+          class="relative mx-auto mt-6 w-full max-w-xl border border-white/20 bg-auto p-4 shadow-xl/30"
+        >
+          <span
+            class="absolute -top-3 left-3 border border-white/20 bg-[#1c1815] px-3 py-1 text-neutral-300"
+          >
+            [ASYA]
+          </span>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <p class="text-neutral-300 text-2xl">R-really?</p>
+
+            <div class="flex shrink-0 flex-col items-end">
+              <img src="/image/asya.png" alt="Asya" class="size-30 p-0.5" />
             </div>
           </div>
         </aside>
-        <div class="space-y-5 pt-6 text-center lg:pt-28">
-          <h1 class="text-5xl font-bold text-white">Hello I'm amino</h1>
-          <p>
-            Hey, I'm amino just a guy with no life who tries everything new...
-            What am I into? Networking, homelabs, and hardware, and maybe some
-            visual novel games too, and right now I'm
-            <span id="status-text" class="inline-block">loading...</span>
-          </p>
-        </div>
-
-        <div class="mx-auto w-80 max-w-full">
-          <img
-            src="/image/ira.jpg"
-            alt="Ira"
-            class="w-full rounded-xl shadow-xl/30 mask-b-from-50% mask-b-to-100%"
-          />
-        </div>
-      </section>
-      <section id="skills" class="mt-10 space-y-1">
-        <h2 class="text-3xl">Skills</h2>
-        <p>
-          well about that i am not that good tbh with you i am just some random
-          dude learning everything new and give it try if i like i learn it if
-          not drop it but about skill i just know little thing like python and
-          javascript and C++ basics (i learn C++ for challenges soo yep) and a
-          lot of thing Sorry my English is Bad
-        </p>
-      </section>
-      <aside
-        class="relative mx-auto mt-6 w-full max-w-xl border border-white/20 bg-auto p-4 shadow-xl/30"
-      >
-        <span
-          class="absolute -top-3 left-3 border border-white/20 bg-[#1c1815] px-3 py-1 text-neutral-300"
+        <section id="faq" class="mt-10 space-y-1">
+          <h2 class="text-3xl">FAQ</h2>
+          <ul class="list-inside list-decimal space-y-1">
+            <li>
+              <strong>How long did it take you to make this portfolio?</strong>
+              Maybe 4 days.
+            </li>
+            <li>
+              <strong>Are you a fan of z.a.t.o?</strong>
+              Maybe.
+            </li>
+            <li>
+              <strong>Did you get inspired by another website?</strong>
+              Yep, from
+              <a
+                href="https://dayli.ly/zato-script"
+                class="md:underline"
+                target="_blank"
+                >here</a
+              >.
+            </li>
+          </ul>
+        </section>
+        <aside
+          class="relative mx-auto mt-6 w-full max-w-xl border border-white/20 bg-auto p-4 shadow-xl/30"
         >
-          [ASYA]
-        </span>
-        <div class="flex items-start justify-between gap-4 pt-1">
-          <p class="text-neutral-300 text-2xl">R-really?</p>
-
-          <div class="flex shrink-0 flex-col items-end">
-            <img src="/image/asya.png" alt="Asya" class="size-30 p-0.5" />
-          </div>
-        </div>
-      </aside>
-      <section id="faq" class="mt-10 space-y-1">
-        <h2 class="text-3xl">FAQ</h2>
-        <ul class="list-inside list-decimal space-y-1">
-          <li>
-            <strong>How long did it take you to make this portfolio?</strong>
-            Maybe 4 days.
-          </li>
-          <li>
-            <strong>Are you a fan of z.a.t.o?</strong>
-            Maybe.
-          </li>
-          <li>
-            <strong>Did you get inspired by another website?</strong>
-            Yep, from
-            <a
-              href="https://dayli.ly/zato-script"
-              class="md:underline"
-              target="_blank"
-              >here</a
-            >.
-          </li>
-        </ul>
-      </section>
-      <aside
-        class="relative mx-auto mt-6 w-full max-w-xl border border-white/20 bg-auto p-4 shadow-xl/30"
-      >
-        <span
-          class="absolute -top-3 left-3 border border-white/20 bg-[#1c1815] px-3 py-1 text-neutral-300"
-        >
-          [ASYA]
-        </span>
-        <div class="flex items-start justify-between gap-4 pt-1">
-          <p class="text-neutral-300 text-2xl">Woah!</p>
-
-          <div class="flex shrink-0 flex-col items-end">
-            <img src="/image/woah.png" alt="Asya" class="size-30 p-0.5" />
-          </div>
-        </div>
-      </aside>
-      <section id="account" class="mt-12 space-y-3">
-        <h2 class="text-3xl">Contact Me</h2>
-        <ul class="list-inside list-decimal space-y-1">
-          <li>
-            my GitHub account
-            <a
-              href="https://github.com/2mino-dev"
-              target="_blank"
-              class="text-2xl md:underline"
-              >here</a
-            >
-          </li>
-          <li>
-            my Discord account
-            <a
-              href="https://discord.com/users/977216031699386419"
-              target="_blank"
-              class="text-2xl md:underline"
-              >here</a
-            >
-          </li>
-        </ul>
-      </section>
-      <section class="mt-11 gap-x-4 gap-y-5 mask-b-from-50% mask-b-to-100% text-amber-50">
-        <h2 class="text-3xl">GuestBooks</h2>
-        <div id="guestbooks___guestbook-form-container">
-          <form
-            id="guestbooks___guestbook-form"
-            action="https://guestbooks.meadow.cafe/guestbook/6631/submit"
-            method="post"
+          <span
+            class="absolute -top-3 left-3 border border-white/20 bg-[#1c1815] px-3 py-1 text-neutral-300"
           >
-            <div class="guestbooks___input-container">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
+            [ASYA]
+          </span>
+          <div class="flex items-start justify-between gap-4 pt-1">
+            <p class="text-neutral-300 text-2xl">Woah!</p>
+
+            <div class="flex shrink-0 flex-col items-end">
+              <img src="/image/woah.png" alt="Asya" class="size-30 p-0.5" />
             </div>
-            <div id="guestbooks___challenge-answer-container"></div>
-            <div class="guestbooks___input-container">
-              <label for="text">Message</label>
-              <textarea
-                id="text"
-                name="text"
-                placeholder="Leave your message here..."
-                rows="4"
-                style="width: 100%; box-sizing: -box; resize: vertical"
-                class="border-2"
-                required
-              ></textarea>
-            </div>
-            <div id="guestbooks___pow-status"></div>
-            <button type="submit" class="border-2  px-1 py-1">submit</button>
-            <div id="guestbooks___error-message"></div>
-          </form>
-        </div>
-        <hr style="margin: 1em 0"/>
-        <h3 id="guestbooks___guestbook-messages-header">Messages</h3>
-        <div id="guestbooks___guestbook-messages-container" class="py-5"></div>
-      </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/gh/0x5841524f4e/js-lanyard/lanyard.js"></script>
-    <script defer src="https://guestbooks.meadow.cafe/resources/js/embed_script/6631/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </div>
+          </div>
+        </aside>
+        <section id="account" class="mt-12 space-y-3">
+          <h2 class="text-3xl">Contact Me</h2>
+          <ul class="list-inside list-decimal space-y-1">
+            <li>
+              my GitHub account
+              <a
+                href="https://github.com/2mino-dev"
+                target="_blank"
+                class="text-2xl md:underline"
+                >here</a
+              >
+            </li>
+            <li>
+              my Discord account
+              <a
+                href="https://discord.com/users/977216031699386419"
+                target="_blank"
+                class="text-2xl md:underline"
+                >here</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section
+          class="mt-11 gap-x-4 gap-y-5 mask-b-from-50% mask-b-to-100% text-amber-50"
+        >
+          <h2 class="text-3xl">GuestBooks</h2>
+          <div id="guestbooks___guestbook-form-container">
+            <form
+              id="guestbooks___guestbook-form"
+              action="https://guestbooks.meadow.cafe/guestbook/6631/submit"
+              method="post"
+            >
+              <div class="guestbooks___input-container">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div id="guestbooks___challenge-answer-container"></div>
+              <div class="guestbooks___input-container">
+                <label for="text">Message</label>
+                <textarea
+                  id="text"
+                  name="text"
+                  placeholder="Leave your message here..."
+                  rows="4"
+                  style="width: 100%; box-sizing: -box; resize: vertical"
+                  class="border-2"
+                  required
+                ></textarea>
+              </div>
+              <div id="guestbooks___pow-status"></div>
+              <button type="submit" class="border-2 px-1 py-1">submit</button>
+              <div id="guestbooks___error-message"></div>
+            </form>
+          </div>
+          <hr style="margin: 1em 0" />
+          <h3 id="guestbooks___guestbook-messages-header">Messages</h3>
+          <div
+            id="guestbooks___guestbook-messages-container"
+            class="py-5"
+          ></div>
+        </section>
+      </main>
+      <script src="https://cdn.jsdelivr.net/gh/0x5841524f4e/js-lanyard/lanyard.js"></script>
+      <script
+        defer
+        src="https://guestbooks.meadow.cafe/resources/js/embed_script/6631/script.js"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+      <script type="module" src="/src/main.js"></script>
+    </div>
   </body>
 </html>

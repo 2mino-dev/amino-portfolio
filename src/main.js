@@ -60,6 +60,7 @@ lanyard({
     const status = document.getElementById("card-status");
     const banner = document.getElementById("banner");
     const name = document.getElementById("card-name");
+    const life = document.getElementById("status");
     const user = data.discord_user;
 
     const user2 = {
@@ -85,5 +86,6 @@ lanyard({
     dot2.className = `absolute bottom-1 right-1 size-5 rounded-full border-4 border-[#111214] ${colors[data.discord_status]}`;
     text.textContent = data.discord_status;
     name.textContent = `${data.discord_user.display_name}`;
+    life.textContent = `${data.kv.status}`
   },
 });
