@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>//home</title>
   </head>
-  <body id="body" class="bg-bg text-amber-50 font-custom overflow-hidden crt">
+  <body id="body" class="bg-bg text-amber-50 font-custom overflow-hidden">
     <div
       id="enter"
       class="fixed inset-0 z-100 flex items-center justify-center bg-black/30 duration-500 transition"
@@ -103,7 +103,10 @@
                   <p class="text-xs font-bold text-gray-400 uppercase">
                     Latest
                   </p>
-                  <p class="mt-1 text-sm text-gray-200" id="status">loading...</p>
+                  <div id="statuscafe" class="gap-2">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                  </div>
                 </div>
               </div>
             </aside>
@@ -271,6 +274,10 @@
         </section>
       </main>
       <script src="https://cdn.jsdelivr.net/gh/0x5841524f4e/js-lanyard/lanyard.js"></script>
+      <script
+        src="https://status.cafe/current-status.js?name=amino"
+        defer
+      ></script>
       <script
         defer
         src="https://guestbooks.meadow.cafe/resources/js/embed_script/6631/script.js"
